@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Website Title for Google Search -->
+    <title>هيئة صلاة النبي ﷺ (كيفية صلاة النبي ﷺ) - Harun Abubakar Jibril</title>
+    
+    <!-- Google Search Keywords in Multiple Languages -->
+    <meta name="description" content="كتاب هيئة صلاة النبي ﷺ (كيفية الصلاة / Sallah) تأليف هارون أبوبكر جبريل - نيجيريا. How the Prophet ﷺ prayed. Yadda Annabi ﷺ ya yi Sallah. Comment le Prophète ﷺ priait.">
+    <meta name="keywords" content="هيئة صلاة النبي, كيفية صلاة النبي, How the Prophet prayed, Yadda Annabi ya yi Sallah, Harun Abubakar Jibril, Sheikh Abubakar Jibril Sokoto">
+    <meta name="author" content="Harun Abubakar Jibril">
+
+    <style>
+        :root {
+            --primary-navy: #0f172a;      /* Dark Navy Header Background */
+            --accent-gold: #b45309;       /* Deep Amber/Gold */
+            --tag-bg: #fef3c7;           /* Warm Soft Gold Pill Background */
+            --tag-text: #000000;         /* Pure Black High-Contrast Text */
+            --bg-body: #f8fafc;           /* Light Greyish-White Page Background */
+            --bg-card: #ffffff;           /* Clean Pure White Container */
+            --text-main: #0f172a;         /* High-Contrast Dark Text */
+            --text-muted: #475569;       /* Medium Dark Subtitles */
+            --border-color: #cbd5e1;     /* Subtle Gray Borders */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* Translation Header Bar */
+        .translate-box {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 0.95rem;
+            border-bottom: 3px solid #d97706;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Main Header */
+        header {
+            background-color: var(--primary-navy);
+            color: #ffffff;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fbbf24;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Hero / Book Info Section */
+        .book-card {
+            background: var(--bg-card);
+            border-radius: 14px;
+            border: 2px solid var(--border-color);
+            padding: 35px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Pure Black High-Contrast Tag */
+        .author-tag {
+            display: inline-block;
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
+            font-weight: 900;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border: 1px solid #fde68a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .book-card h2 {
+            font-size: 2.3rem;
+            color: var(--primary-navy);
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .translations-bar {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1rem;
+            color: #334155;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Author Profile Box */
+        .author-box {
+            background-color: #f1f5f9;
+            border: 1px solid var(--border-color);
+            border-top: 5px solid #d97706;
+            padding: 30px 25px;
+            border-radius: 14px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .author-photo {
+            max-width: 440px;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center 20%;
+            border-radius: 12px;
+            border: 4px solid #d97706;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+            margin-bottom: 20px;
+        }
+
+        .author-details {
+            max-width: 650px;
+        }
+
+        .author-details h4 {
+            margin: 0 0 10px 0;
+            color: var(--primary-navy);
+            font-size: 1.4rem;
+        }
+
+        .author-details p {
+            margin: 0;
+            color: var(--text-main);
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        /* Cover Image Container */
+        .cover-container {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .cover-img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #d97706;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+            object-fit: cover;
+        }
+
+        /* PDF & Full Text Section Card */
+        .reader-card {
+            background: var(--bg-card);
+            border-radius: 14px;
+            border: 2px solid var(--border-color);
+            padding: 35px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+            margin-bottom: 40px;
+        }
+
+        .reader-card h3 {
+            color: var(--primary-navy);
+            font-size: 1.9rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 750px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        /* Live Printable/Translatable Book Text Container */
+        .full-book-text {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: right;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .full-book-text h4 {
+            color: var(--accent-gold);
+            font-size: 1.6rem;
+            border-bottom: 2px solid #fde68a;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .full-book-text p {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Translate Bar (Sticky at Top) -->
+    <div class="translate-box">
+        <span>🌐 Translate Website / ترجمة الموقع: </span>
+        <div id="google_translate_element" style="display: inline-block;"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>المكتبة الرقمية | Digital Library</h1>
+        <p>تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Book Details Section -->
+        <div class="book-card">
+            <span class="author-tag">تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</span>
+            
+            <h2>كتاب: هيئة صلاة النبي ﷺ (كتابةً وصورةً)</h2>
+            <div class="subtitle">How the Prophet ﷺ Prayed (In Writing and Pictures)</div>
+            
+            <!-- Multi-language Clarifications -->
+            <div class="translations-bar">
+                <strong>Hausa:</strong> Yadda Annabi ﷺ ya yi Sallah (A rubuce da hotuna) <br>
+                <strong>English:</strong> How the Prophet ﷺ prayed (The Manner of Ritual Prayer) <br>
+                <strong>Français:</strong> Comment le Prophète ﷺ priait <br>
+                <strong>Türkçe:</strong> Peygamberimizin ﷺ Namaz Kılınışı
+            </div>
+            
+            <!-- Author Info Box -->
+            <div class="author-box">
+                <img src="author.jpeg" alt="Harun Abubakar Jibril" class="author-photo" onerror="this.src='https://via.placeholder.com/440x280?text=Author+Photo'">
+                <div class="author-details">
+                    <h4>عن الكاتب / About the Author</h4>
+                    <p>
+                        الكاتب: <strong>هارون أبوبكر جبريل (Harun Abubakar Jibril)</strong> من دولة نيجيريا، ولاية سوكوتو (Sokoto State, Nigeria)، وهو ابن الشيخ <strong>أبوبكر جبريل سوكوتو</strong> (Son of Sheikh Abubakar Jibril Sokoto).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cover Image -->
+            <div class="cover-container">
+                <img src="cover.jpeg" alt="غلاف الكتاب - Book Cover" class="cover-img" onerror="this.src='https://via.placeholder.com/600x340?text=Book+Cover'">
+            </div>
+        </div>
+
+        <!-- PDF Reader & Translatable Book Text Section -->
+        <div class="reader-card">
+            <h3>قراءة الكتاب | Read the Book</h3>
+            
+            <!-- Original PDF Viewer -->
+            <iframe src="book.pdf" class="pdf-frame"></iframe>
+
+            <!-- Translatable Web Text Section -->
+            <div class="full-book-text">
+                <h3 style="text-align: center; color: var(--primary-navy); font-size: 1.8rem; margin-top: 0;">
+                    نص الكتاب الكامل (قابل للترجمة الفورية) <br>
+                    Full Book Text (Translates Automatically)
+                </h3>
+                <p style="text-align: center; color: var(--text-muted); font-size: 1rem;">
+                    اختر لغتك من شريط الترجمة بأعلى الصفحة لترجمة نص الكتاب كاملاً تلقائياً. <br>
+                    Select Hausa or English from the top translation bar to translate the full book below.
+                </p>
+
+                <!-- Chapter 1 -->
+                <h4>مقدمة الكتاب (Introduction)</h4>
+                <p>
+                    الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين نبينا محمد وعلى آله وصحبه أجمعين. أقدم لكم في هذا الكتاب بيان هيئة وصفة صلاة النبي صلى الله عليه وسلم بالدليل والشرح المبسط كتابةً وصورةً...
+                </p>
+
+                <!-- Chapter 2 -->
+                <h4>المبحث الأول: استقبال القبلة والنية (Facing the Qibla and Niyyah)</h4>
+                <p>
+                    إذا قام المسلم إلى الصلاة، فإنه يستقبل القبلة (الكعبة المشرفة) أينما كان، بجميع بدنه، مخلصاً نيته لله تعالى في الصلاة التي يريد أن يصليها...
+                </p>
+
+                <!-- Chapter 3 -->
+                <h4>المبحث الثاني: تكبيرة الإحرام والقيام (Takbeerat al-Ihram and Standing)</h4>
+                <p>
+                    ثم يكبر قائلاً: (الله أكبر)، ويرفع يديه حذو منكبيه أو أذنيه، ويبسط أصابعهما، ثم يضع يده اليمنى على يده اليسرى على صدره...
+                </p>
+
+                <!-- Chapter 4 -->
+                <h4>المبحث الثالث: الركوع والرفع منه (Rukoo' and Standing Up)</h4>
+                <p>
+                    ثم يكبر ويركع حتى يطمئن ركوعاً، ويضع يديه على ركبتيه مفرجتي الأصابع، ويقول: (سبحان ربي العظيم) ثلاث مرات...
+                </p>
+
+                <!-- You can copy and paste the rest of your book paragraphs right here inside this section -->
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 جميع الحقوق محفوظة للكاتب هارون أبوبكر جبريل (Harun Abubakar Jibril) | All Rights Reserved</p>
+    </footer>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ar',
+                includedLanguages: 'en,fr,ha,yo,ig,ur,ar,es,de,zh-CN,tr,sw',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
