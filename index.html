@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Website Title for Google Search -->
-    <title>هيئة صلاة النبي ﷺ (كيفية صلاة النبي ﷺ) - Harun Abubakar Jibril</title>
+    <title>هيئة صلاة النبي ﷺ - Harun Abubakar Jibril</title>
     
-    <!-- Google Search Keywords -->
-    <meta name="description" content="كتاب هيئة صلاة النبي ﷺ (كيفية الصلاة / Sallah) تأليف هارون أبوبكر جبريل - نيجيريا. Hayatu Salatin Nabiyyi. How the Prophet ﷺ prayed. Yadda Annabi ﷺ ya yi Sallah.">
+    <meta name="description" content="كتاب هيئة صلاة النبي ﷺ تأليف هارون أبوبكر جبريل - نيجيريا. Hayatu Salatin Nabiyyi. How the Prophet prayed. Yadda Annabi ya yi Sallah.">
     <meta name="keywords" content="هيئة صلاة النبي, كيفية صلاة النبي, Hayatu Salatin Nabiyyi, Yadda Annabi ya yi Sallah, How the Prophet prayed, Harun Abubakar Jibril, Sheikh Abubakar Jibril Sokoto">
     <meta name="author" content="Harun Abubakar Jibril">
 
@@ -45,44 +43,44 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            direction: ltr;
+            direction: ltr !important;
         }
 
         /* Main Header */
         header {
             background-color: var(--primary-navy);
             color: #ffffff;
-            padding: 30px 15px;
+            padding: 25px 15px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            direction: rtl;
+            direction: ltr !important;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             color: #fbbf24;
         }
 
         header p {
-            margin: 8px 0 0;
-            font-size: 1.1rem;
+            margin: 6px 0 0;
+            font-size: 1rem;
             color: #e2e8f0;
         }
 
         .container {
             max-width: 900px;
-            margin: 25px auto;
-            padding: 0 15px;
+            margin: 20px auto;
+            padding: 0 12px;
         }
 
         .book-card {
             background: var(--bg-card);
             border-radius: 14px;
             border: 2px solid var(--border-color);
-            padding: 25px 20px;
+            padding: 20px 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             text-align: center;
         }
 
@@ -91,16 +89,16 @@
             background-color: var(--tag-bg);
             color: var(--tag-text);
             font-weight: 800;
-            padding: 8px 20px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 1rem;
+            font-size: 0.95rem;
             margin-bottom: 15px;
             border: 1px solid #fde68a;
-            direction: rtl;
+            direction: ltr !important;
         }
 
         .book-card h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--primary-navy);
             margin: 0 0 10px 0;
             direction: rtl;
@@ -108,32 +106,31 @@
 
         .subtitle {
             color: var(--text-muted);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 20px;
             font-weight: 600;
-            direction: ltr;
+            direction: ltr !important;
         }
 
-        /* Clean Left-To-Right Language Box Fix */
+        /* Clean Left-To-Right Language Box Fix for Mobile */
         .translations-bar {
             background-color: #f1f5f9;
             border-radius: 10px;
             padding: 15px;
-            font-size: 1.05rem;
+            font-size: 0.98rem;
             color: #334155;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             border: 1px solid var(--border-color);
-            text-align: left;
-            direction: ltr;
-            line-height: 1.9;
+            text-align: left !important;
+            direction: ltr !important;
+            unicode-bidi: isolate;
+            line-height: 2;
         }
 
-        .translations-bar div {
-            margin-bottom: 6px;
-        }
-
-        .translations-bar div:last-child {
-            margin-bottom: 0;
+        .translations-bar p {
+            margin: 4px 0;
+            text-align: left !important;
+            direction: ltr !important;
         }
 
         /* Author Profile Box */
@@ -141,10 +138,10 @@
             background-color: #f1f5f9;
             border: 1px solid var(--border-color);
             border-top: 5px solid #d97706;
-            padding: 25px 18px;
+            padding: 20px 15px;
             border-radius: 14px;
-            margin-top: 25px;
-            margin-bottom: 30px;
+            margin-top: 20px;
+            margin-bottom: 25px;
             text-align: center;
             direction: rtl;
         }
@@ -152,31 +149,32 @@
         .author-photo {
             max-width: 100%;
             width: 440px;
-            height: 280px;
+            height: auto;
+            max-height: 280px;
             object-fit: cover;
             object-position: center 20%;
             border-radius: 12px;
             border: 4px solid #d97706;
             box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
         .author-details h4 {
             margin: 0 0 10px 0;
             color: var(--primary-navy);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
 
         .author-details p {
             margin: 0;
             color: var(--text-main);
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1rem;
+            line-height: 1.7;
         }
 
         /* Cover Container */
         .cover-container {
-            margin-top: 25px;
+            margin-top: 20px;
             text-align: center;
         }
 
@@ -194,14 +192,14 @@
             background: var(--bg-card);
             border-radius: 14px;
             border: 2px solid var(--border-color);
-            padding: 25px 20px;
+            padding: 20px 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .reader-card h3 {
             color: var(--primary-navy);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-top: 0;
             margin-bottom: 20px;
             text-align: center;
@@ -210,11 +208,11 @@
 
         .pdf-frame {
             width: 100%;
-            height: 650px;
+            height: 550px;
             border: 1px solid var(--border-color);
             border-radius: 10px;
             background: #ffffff;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         /* Full Book Text */
@@ -222,34 +220,34 @@
             background-color: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 25px 20px;
+            padding: 20px 15px;
             text-align: right;
             direction: rtl;
         }
 
         .full-book-text h4 {
             color: var(--accent-gold);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             border-bottom: 2px solid #fde68a;
-            padding-bottom: 8px;
-            margin-top: 25px;
+            padding-bottom: 6px;
+            margin-top: 20px;
         }
 
         .full-book-text p {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             color: var(--text-main);
-            line-height: 2;
+            line-height: 1.9;
             margin-bottom: 15px;
         }
 
         footer {
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-top: 30px;
+            font-size: 0.9rem;
+            margin-top: 25px;
             border-top: 1px solid var(--border-color);
-            direction: rtl;
+            direction: ltr !important;
         }
     </style>
 </head>
@@ -263,25 +261,25 @@
 
     <!-- Header -->
     <header>
-        <h1>المكتبة الرقمية | Digital Library</h1>
-        <p>تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</p>
+        <h1>Digital Library | المكتبة الرقمية</h1>
+        <p>Author: Harun Abubakar Jibril (تأليف: هارون أبوبكر جبريل)</p>
     </header>
 
     <div class="container">
         
         <!-- Book Details Section -->
         <div class="book-card">
-            <span class="author-tag">تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</span>
+            <span class="author-tag">(Harun Abubakar Jibril) تأليف: هارون أبوبكر جبريل</span>
             
             <h2>كتاب: هيئة صلاة النبي ﷺ (كتابةً وصورةً)</h2>
-            <div class="subtitle">How the Prophet ﷺ Prayed (In Writing and Pictures)</div>
+            <div class="subtitle">How the Prophet (Sallallahu Alaihi Wasallam) Prayed (In Writing and Pictures)</div>
             
-            <!-- Fixed Clean Language Bar (Left to Right) -->
+            <!-- Clean Fixed Left-To-Right Language Box -->
             <div class="translations-bar">
-                <div><strong>Hausa:</strong> <span class="notranslate">Yadda Annabi ﷺ ya yi Sallah (A rubuce da hotuna)</span></div>
-                <div><strong>English:</strong> <span class="notranslate">How the Prophet ﷺ prayed (The Manner of Ritual Prayer)</span></div>
-                <div><strong>Français:</strong> <span class="notranslate">Comment le Prophète ﷺ priait</span></div>
-                <div><strong>Türkçe:</strong> <span class="notranslate">Peygamberimizin ﷺ Namaz Kılınışı</span></div>
+                <p><strong>Hausa:</strong> Yadda Annabi (Sallallahu Alaihi Wasallam) ya yi Sallah (A rubuce da hotuna)</p>
+                <p><strong>English:</strong> How the Prophet (Sallallahu Alaihi Wasallam) prayed (The Manner of Ritual Prayer)</p>
+                <p><strong>Français:</strong> Comment le Prophète (Sallallahu Alaihi Wasallam) priait</p>
+                <p><strong>Türkçe:</strong> Peygamberimizin (Sallallahu Alaihi Wasallam) Namaz Kılınışı</p>
             </div>
             
             <!-- Author Info Box -->
@@ -305,39 +303,33 @@
         <div class="reader-card">
             <h3>قراءة الكتاب | Read the Book</h3>
             
-            <!-- Original PDF Viewer -->
             <iframe src="book.pdf" class="pdf-frame"></iframe>
 
-            <!-- Translatable Web Text Section -->
             <div class="full-book-text">
-                <h3 style="text-align: center; color: var(--primary-navy); font-size: 1.7rem; margin-top: 0;">
+                <h3 style="text-align: center; color: var(--primary-navy); font-size: 1.5rem; margin-top: 0;">
                     نص الكتاب الكامل (قابل للترجمة الفورية) <br>
-                    <span style="font-size: 1.1rem; color: var(--text-muted);">Full Book Text (Translates Automatically)</span>
+                    <span style="font-size: 1rem; color: var(--text-muted);">Full Book Text (Translates Automatically)</span>
                 </h3>
-                <p style="text-align: center; color: var(--text-muted); font-size: 1rem;">
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.95rem;">
                     اختر لغتك من شريط الترجمة بأعلى الصفحة لترجمة نص الكتاب كاملاً تلقائياً. <br>
                     Select Hausa or English from the top translation bar to translate the full book below.
                 </p>
 
-                <!-- Chapter 1 -->
                 <h4>مقدمة الكتاب (Introduction)</h4>
                 <p>
                     الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين نبينا محمد وعلى آله وصحبه أجمعين. أقدم لكم في هذا الكتاب بيان هيئة وصفة صلاة النبي صلى الله عليه وسلم بالدليل والشرح المبسط كتابةً وصورةً...
                 </p>
 
-                <!-- Chapter 2 -->
                 <h4>المبحث الأول: استقبال القبلة والنية (Facing the Qibla and Niyyah)</h4>
                 <p>
                     إذا قام المسلم إلى الصلاة، فإنه يستقبل القبلة (الكعبة المشرفة) أينما كان، بجميع بدنه، مخلصاً نيته لله تعالى في الصلاة التي يريد أن يصليها...
                 </p>
 
-                <!-- Chapter 3 -->
                 <h4>المبحث الثالث: تكبيرة الإحرام والقيام (Takbeerat al-Ihram and Standing)</h4>
                 <p>
                     ثم يكبر قائلاً: (الله أكبر)، ويرفع يديه حذو منكبيه أو أذنيه، ويبسط أصابعهما، ثم يضع يده اليمنى على يده اليسرى على صدره...
                 </p>
 
-                <!-- Chapter 4 -->
                 <h4>المبحث الرابع: الركوع والرفع منه (Rukoo' and Standing Up)</h4>
                 <p>
                     ثم يكبر ويركع حتى يطمئن ركوعاً، ويضع يديه على ركبتيه مفرجتي الأصابع، ويقول: (سبحان ربي العظيم) ثلاث مرات...
@@ -348,7 +340,7 @@
     </div>
 
     <footer>
-        <p>© 2026 جميع الحقوق محفوظة للكاتب هارون أبوبكر جبريل (Harun Abubakar Jibril) | All Rights Reserved</p>
+        <p>© 2026 Harun Abubakar Jibril (هارون أبوبكر جبريل) | All Rights Reserved</p>
     </footer>
 
     <!-- Google Translate Script -->
