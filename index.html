@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>هيئة صلاة النبي ﷺ - Harun Abubakar Jibril</title>
+    <!-- Website Title for Google Search -->
+    <title>هيئة صلاة النبي ﷺ (كيفية صلاة النبي ﷺ) - Harun Abubakar Jibril</title>
     
-    <meta name="description" content="كتاب هيئة صلاة النبي ﷺ تأليف هارون أبوبكر جبريل - نيجيريا. Hayatu Salatin Nabiyyi. How the Prophet prayed. Yadda Annabi ya yi Sallah.">
+    <!-- Google Search Keywords -->
+    <meta name="description" content="كتاب هيئة صلاة النبي ﷺ (كيفية الصلاة / Sallah) تأليف هارون أبوبكر جبريل - نيجيريا. Hayatu Salatin Nabiyyi. How the Prophet ﷺ prayed. Yadda Annabi ﷺ ya yi Sallah.">
     <meta name="keywords" content="هيئة صلاة النبي, كيفية صلاة النبي, Hayatu Salatin Nabiyyi, Yadda Annabi ya yi Sallah, How the Prophet prayed, Harun Abubakar Jibril, Sheikh Abubakar Jibril Sokoto">
     <meta name="author" content="Harun Abubakar Jibril">
 
@@ -112,7 +114,7 @@
             direction: ltr !important;
         }
 
-        /* Clean Left-To-Right Language Box Fix for Mobile */
+        /* Fixed Language Box to prevent text flipping on mobile */
         .translations-bar {
             background-color: #f1f5f9;
             border-radius: 10px;
@@ -123,14 +125,18 @@
             border: 1px solid var(--border-color);
             text-align: left !important;
             direction: ltr !important;
-            unicode-bidi: isolate;
             line-height: 2;
         }
 
-        .translations-bar p {
-            margin: 4px 0;
-            text-align: left !important;
+        .translations-bar div {
+            margin-bottom: 6px;
             direction: ltr !important;
+            text-align: left !important;
+            unicode-bidi: embed;
+        }
+
+        .translations-bar div:last-child {
+            margin-bottom: 0;
         }
 
         /* Author Profile Box */
@@ -172,7 +178,6 @@
             line-height: 1.7;
         }
 
-        /* Cover Container */
         .cover-container {
             margin-top: 20px;
             text-align: center;
@@ -206,16 +211,36 @@
             direction: rtl;
         }
 
-        .pdf-frame {
+        /* Responsive PDF Container */
+        .pdf-wrapper {
+            position: relative;
             width: 100%;
-            height: 550px;
             border: 1px solid var(--border-color);
             border-radius: 10px;
+            overflow: hidden;
             background: #ffffff;
             margin-bottom: 25px;
+            -webkit-overflow-scrolling: touch;
         }
 
-        /* Full Book Text */
+        @media (min-width: 768px) {
+            .pdf-wrapper {
+                height: 700px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .pdf-wrapper {
+                height: 520px;
+            }
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         .full-book-text {
             background-color: #ffffff;
             border: 1px solid var(--border-color);
@@ -261,25 +286,25 @@
 
     <!-- Header -->
     <header>
-        <h1>Digital Library | المكتبة الرقمية</h1>
-        <p>Author: Harun Abubakar Jibril (تأليف: هارون أبوبكر جبريل)</p>
+        <h1>المكتبة الرقمية | Digital Library</h1>
+        <p>تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</p>
     </header>
 
     <div class="container">
         
         <!-- Book Details Section -->
         <div class="book-card">
-            <span class="author-tag">(Harun Abubakar Jibril) تأليف: هارون أبوبكر جبريل</span>
+            <span class="author-tag">تأليف: هارون أبوبكر جبريل (Harun Abubakar Jibril)</span>
             
             <h2>كتاب: هيئة صلاة النبي ﷺ (كتابةً وصورةً)</h2>
-            <div class="subtitle">How the Prophet (Sallallahu Alaihi Wasallam) Prayed (In Writing and Pictures)</div>
+            <div class="subtitle">How the Prophet ﷺ Prayed (In Writing and Pictures)</div>
             
-            <!-- Clean Fixed Left-To-Right Language Box -->
+            <!-- Fixed Clean Language Bar with ﷺ Symbol -->
             <div class="translations-bar">
-                <p><strong>Hausa:</strong> Yadda Annabi (Sallallahu Alaihi Wasallam) ya yi Sallah (A rubuce da hotuna)</p>
-                <p><strong>English:</strong> How the Prophet (Sallallahu Alaihi Wasallam) prayed (The Manner of Ritual Prayer)</p>
-                <p><strong>Français:</strong> Comment le Prophète (Sallallahu Alaihi Wasallam) priait</p>
-                <p><strong>Türkçe:</strong> Peygamberimizin (Sallallahu Alaihi Wasallam) Namaz Kılınışı</p>
+                <div><strong>Hausa:</strong> <span class="notranslate">Yadda Annabi ﷺ ya yi Sallah (A rubuce da hotuna)</span></div>
+                <div><strong>English:</strong> <span class="notranslate">How the Prophet ﷺ prayed (The Manner of Ritual Prayer)</span></div>
+                <div><strong>Français:</strong> <span class="notranslate">Comment le Prophète ﷺ priait</span></div>
+                <div><strong>Türkçe:</strong> <span class="notranslate">Peygamberimizin ﷺ Namaz Kılınışı</span></div>
             </div>
             
             <!-- Author Info Box -->
@@ -303,8 +328,11 @@
         <div class="reader-card">
             <h3>قراءة الكتاب | Read the Book</h3>
             
-            <iframe src="book.pdf" class="pdf-frame"></iframe>
+            <div class="pdf-wrapper">
+                <iframe src="book.pdf#toolbar=0&navpanes=0&scrollbar=1" class="pdf-frame"></iframe>
+            </div>
 
+            <!-- Translatable Web Text Section -->
             <div class="full-book-text">
                 <h3 style="text-align: center; color: var(--primary-navy); font-size: 1.5rem; margin-top: 0;">
                     نص الكتاب الكامل (قابل للترجمة الفورية) <br>
@@ -315,21 +343,25 @@
                     Select Hausa or English from the top translation bar to translate the full book below.
                 </p>
 
+                <!-- Chapter 1 -->
                 <h4>مقدمة الكتاب (Introduction)</h4>
                 <p>
                     الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين نبينا محمد وعلى آله وصحبه أجمعين. أقدم لكم في هذا الكتاب بيان هيئة وصفة صلاة النبي صلى الله عليه وسلم بالدليل والشرح المبسط كتابةً وصورةً...
                 </p>
 
+                <!-- Chapter 2 -->
                 <h4>المبحث الأول: استقبال القبلة والنية (Facing the Qibla and Niyyah)</h4>
                 <p>
                     إذا قام المسلم إلى الصلاة، فإنه يستقبل القبلة (الكعبة المشرفة) أينما كان، بجميع بدنه، مخلصاً نيته لله تعالى في الصلاة التي يريد أن يصليها...
                 </p>
 
+                <!-- Chapter 3 -->
                 <h4>المبحث الثالث: تكبيرة الإحرام والقيام (Takbeerat al-Ihram and Standing)</h4>
                 <p>
                     ثم يكبر قائلاً: (الله أكبر)، ويرفع يديه حذو منكبيه أو أذنيه، ويبسط أصابعهما، ثم يضع يده اليمنى على يده اليسرى على صدره...
                 </p>
 
+                <!-- Chapter 4 -->
                 <h4>المبحث الرابع: الركوع والرفع منه (Rukoo' and Standing Up)</h4>
                 <p>
                     ثم يكبر ويركع حتى يطمئن ركوعاً، ويضع يديه على ركبتيه مفرجتي الأصابع، ويقول: (سبحان ربي العظيم) ثلاث مرات...
@@ -340,7 +372,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Harun Abubakar Jibril (هارون أبوبكر جبريل) | All Rights Reserved</p>
+        <p>© 2026 جميع الحقوق محفوظة للكاتب هارون أبوبكر جبريل (Harun Abubakar Jibril) | All Rights Reserved</p>
     </footer>
 
     <!-- Google Translate Script -->
